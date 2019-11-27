@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: my-eureka
+
+#服务端口
+server:
+  port: 10211
+
+#注册中心相关配置
+eureka:
+  server:
+    # 配置关闭自我保护，并按需配置Eureka Server清理无效节点的时间间隔（5000ms）。
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
+  client:
+    register-with-eureka: false #fasle:
+    fetch-registry: false        #true： Cannot execute request on any know server
+    service-url:
+      defaultZone: http://120.27.243.27:10211/eureka/
+  instance:
+    prefer-ip-address: true
+
