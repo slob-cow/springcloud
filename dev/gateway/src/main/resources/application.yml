@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: gateway
+server:
+  port: 10215
+zuul:
+  routes:
+    # ��������·��
+    api-a:
+      path: /client/**
+      serviceId: client-test #client-test ��Ӧ����ע�����ĵķ��������
+
+      #����ַ��ķ�ʽ�������ģ�����ͨ��localhost��10215/client���ʣ�ʵ���ǽ���ַӳ�䵽��client-test�������ĵ�ַ��
+
+    # ��ͳ��·��
+    api-b-url:
+      path: /caller/**
+      #�ɴ�ͳ��·��ģʽ�����ǿ���֪���û����ʵ�·��·��Ϊlocalhost:10215/caller��������ӳ�䵽��http://localhost:10213
+      url: http://120.27.243.27:10213/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://120.27.243.27:10211/eureka/
