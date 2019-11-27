@@ -2,21 +2,20 @@ spring:
   application:
     name: my-eureka
 
-#·şÎñ¶Ë¿Ú
+#ï¿½ï¿½ï¿½ï¿½Ë¿ï¿½
 server:
-  port: 10211
-
-#×¢²áÖĞĞÄÏà¹ØÅäÖÃ
+  port: 10222
+#×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 eureka:
   server:
-    # ÅäÖÃ¹Ø±Õ×ÔÎÒ±£»¤£¬²¢°´ĞèÅäÖÃEureka ServerÇåÀíÎŞĞ§½ÚµãµÄÊ±¼ä¼ä¸ô£¨5000ms£©¡£
+    # ï¿½ï¿½ï¿½Ã¹Ø±ï¿½ï¿½ï¿½ï¿½Ò±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Eureka Serverï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ§ï¿½Úµï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½5000msï¿½ï¿½ï¿½ï¿½
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 5000
   client:
     register-with-eureka: false #fasle:
-    fetch-registry: false        #true£º Cannot execute request on any know server
+    fetch-registry: false        #trueï¿½ï¿½ Cannot execute request on any know server
     service-url:
-      defaultZone: http://120.27.243.27:10211/eureka/
+      defaultZone: http://120.27.243.27:10222/eureka/
   instance:
     prefer-ip-address: true
 

@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.own</groupId>
     <artifactId>server-caller</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>server-caller</name>
     <description>服务调用者</description>
 

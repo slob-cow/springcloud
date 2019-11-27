@@ -2,14 +2,14 @@ spring:
   application:
     name: server-provider
 
-#·þÎñ¶Ë¿Ú
+#ï¿½ï¿½ï¿½ï¿½Ë¿ï¿½
 server:
   port: 10214
 
-# ×¢²áÖÐÐÄµØÖ·
+# ×¢ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ö·
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:10211/eureka/
+      defaultZone: http://localhost:10222/eureka/
   instance:
     prefer-ip-address: true

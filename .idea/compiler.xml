@@ -7,9 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gateway" />
-        <module name="dev" />
         <module name="eureka" />
-        <module name="springcloud" />
         <module name="server-caller" />
         <module name="service-provider" />
         <module name="client" />
